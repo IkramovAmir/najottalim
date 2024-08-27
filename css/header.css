@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background:#021823 ;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    bottom: 400px;
+}
+p span{
+    font-size: 70px;
+    color: white;
+    display: inline-block;
+    gap: 100px;
+}
+.cards img{
+    animation: animationImg 2s 1 linear;
+    animation-fill-mode: forwards;
+    width: 280px;
+}
+.left{
+    animation: animationLeft 2s 1 linear;
+    animation-fill-mode: forwards;
+}
+.right{
+    animation: animationRight 2s 1 linear;
+    animation-fill-mode: forwards;
+    
+}
+.left span:nth-child(5),
+.right span:nth-child(1){
+    animation: animationBottom 0.3s 1 linear;
+    animation-fill-mode: forwards;
+    animation-delay: 1.9s;
+}
+.left span:nth-child(4),
+.right span:nth-child(2){
+    animation: animationBottom 0.3s 1 linear;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+.left span:nth-child(3),
+.right span:nth-child(3){
+    animation: animationBottom 0.3s 1 linear;
+    animation-fill-mode: forwards;
+    animation-delay: 2.1s;
+}
+.left span:nth-child(2),
+.right span:nth-child(4){
+    animation: animationBottom 0.3s 1 linear;
+    animation-fill-mode: forwards;
+    animation-delay: 2.2s;
+}
+.left span:nth-child(1),
+.right span:nth-child(5){
+    animation: animationBottom 0.3s 1 linear;
+    animation-fill-mode: forwards;
+    animation-delay: 2.3s;
+}
+
+
+@keyframes animationImg{
+    50%{
+        transform: scale(1.5) translateY(100px);
+    }   
+    100%{
+        transform: scaleY(1) translateY(50px);
+    }
+}   
+@keyframes animationRight{
+    50%{
+        transform:scale(1.2) translate(-89px);
+    }
+    100%{
+        transform: scale(1) translate(-1px);
+    }
+}
+@keyframes animationLeft{
+    50%{
+        transform:scale(1.2) translate(100px);
+}100%{
+    transform: scale(1) translate(10px);
+}
+}
+@keyframes animationBottom{
+    to{
+        transform: translateY(65px);
+    }
+}
